@@ -57,6 +57,8 @@ category_dict = find_category_and_id(html_string)
 
 new_updated = []
 
+print(len(id_dict), "voices found")
+
 for category, ids in category_dict.items():
     category_path = VOICES_PATH / category
     category_path.mkdir(exist_ok=True)
