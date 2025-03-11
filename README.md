@@ -3,10 +3,11 @@
 ## Description
 
 - This is a simple script to download all of Shigure Ui's voice lines from [Ui Button](https://leiros.cloudfree.jp/usbtn/usbtn.html)
+- 這是一個簡單的可以下載時雨羽衣按鈕網站所有語音的的腳本 [Ui Button](https://leiros.cloudfree.jp/usbtn/usbtn.html)
 
 ## Voice Count
 
-- 862 voices
+- 866 voices
 
 ## Support me
 

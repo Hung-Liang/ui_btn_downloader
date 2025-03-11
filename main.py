@@ -35,14 +35,14 @@ def find_category_and_id(html_string):
 def update_readme_voice_count(voice_count):
     readme_path = PROGRAM_PATH / "README.md"
 
-    with open(readme_path, "r") as f:
+    with open(readme_path, "r", encoding="utf-8") as f:
         lines = f.readlines()
 
     for i, line in enumerate(lines):
         if line.startswith("## Voice Count"):
             lines[i : i + 3] = f"## Voice Count\n\n- {voice_count} voices\n"
 
-    with open(readme_path, "w") as f:
+    with open(readme_path, "w", encoding="utf-8") as f:
         f.writelines(lines)
 
 
