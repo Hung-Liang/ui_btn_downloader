@@ -54,7 +54,12 @@ def download_voice(id, src, category, retry=0):
 
     url = src.replace("./", "https://leiros.cloudfree.jp/usbtn/")
 
-    res = requests.get(url)
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+        "Referer": "https://leiros.cloudfree.jp/",
+    }
+
+    res = requests.get(url, headers=headers)
 
     voice_binary = res.content
 
