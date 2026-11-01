@@ -7,7 +7,7 @@
 
 ## Voice Count
 
-- 938 voices
+- 948 voices
 
 ## Support me
 
